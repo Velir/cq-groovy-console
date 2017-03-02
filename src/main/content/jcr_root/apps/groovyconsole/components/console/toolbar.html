@@ -1,0 +1,29 @@
+<div class="btn-toolbar" role="toolbar">
+    <div class="btn-group">
+        <button type="button" class="btn btn-success" id="run-script">
+            <span class="glyphicon glyphicon-play"></span> <span id="run-script-text">Run Script</span>
+        </button>
+    </div>
+
+    <div class="btn-group">
+        <button type="button" class="btn btn-default" id="new-script">
+            <span class="glyphicon glyphicon-pencil"></span> New</span>
+        </button>
+        <button data-sly-test="${!wcmmode.disabled}" type="button" class="btn btn-default" id="open-script">
+            <span class="glyphicon glyphicon-folder-open"></span> Open</span>
+        </button>
+        <button data-sly-test="${!wcmmode.disabled}" type="button" class="btn btn-default" id="save-script">
+            <span class="glyphicon glyphicon-hdd"></span> Save</span>
+        </button>
+    </div>
+
+    <div id="loader">
+        <img src="/etc/clientlibs/groovyconsole/img/ajax-loader.gif">
+    </div>
+
+    <form class="navbar-form navbar-right services-form">
+        <div id="btn-group-services" class="form-group">
+            <input id="services-list" class="form-control" type="text" placeholder="Service or Adapter Name">
+        </div>
+    </form>
+</div>
